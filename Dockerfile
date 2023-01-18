@@ -8,5 +8,5 @@ tar xf ./doctl-1.92.0-linux-amd64.tar.gz && \
 mv ./doctl /usr/local/bin
 
 COPY ./watchdog.sh .
-
+RUN chmod +x ./watchdog.sh
 ENTRYPOINT ["./watchdog.sh"]
